@@ -1,3 +1,69 @@
+{
+  "": [
+    "Design floor plans"
+  ],
+  "Design floor plans": [
+    "Review and edit plans"
+  ],
+  "Review and edit plans": [
+    "Prepare the ground"
+  ],
+  "Prepare the ground": [
+    "Pour the foundation"
+  ],
+  "Pour the foundation": [
+    "Frame the structure"
+  ],
+  "Frame the structure": [
+    "Driveway",
+    "Windows",
+    "HVAC",
+    "Electrical",
+    "Roofing",
+    "Plumbing",
+    "Landscaping",
+    "Siding"
+  ],
+  "Roofing": [
+    "Shingles"
+  ],
+  "Plumbing": [
+    "Drywall"
+  ],
+  "Drywall": [
+    "Paint"
+  ],
+  "Paint": [
+    "Carpet"
+  ]
+}
+Design floor plans
+Review and edit plans
+Prepare the ground
+Pour the foundation
+Frame the structure
+Driveway
+Windows
+HVAC
+Electrical
+Roofing
+Plumbing
+Landscaping
+Siding
+Shingles
+Drywall
+Paint
+Carpet
+
+
+
+
+
+
+
+
+=================================================================
+
 Design floor plans -> ["Review and edit plans"]
 Review and edit plans -> ["Prepare the ground"]
 Prepare the ground -> ["Pour the foundation"]
@@ -15,14 +81,6 @@ Carpet -> []
 Windows -> []
 Shingles -> []
 Driveway -> []
-
-
-
-
-
-
-
-
 
 =================================================================
 

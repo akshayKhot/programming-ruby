@@ -1,90 +1,4 @@
-# sequence
-
-[
-  "Siding",
-  "Landscaping",
-  "Carpet",
-  "Paint",
-  "Drywall",
-  "Plumbing",
-  "Shingles",
-  "Roofing",
-  "Electrical",
-  "HVAC",
-  "Windows",
-  "Driveway",
-  "Frame the structure",
-  "Pour the foundation",
-  "Prepare the ground",
-  "Review and edit plans",
-  "Design floor plans"
-]
-
-# result
-
-{
-  "": [
-    "Design floor plans"
-  ],
-  "Design floor plans": [
-    "Review and edit plans"
-  ],
-  "Review and edit plans": [
-    "Prepare the ground"
-  ],
-  "Prepare the ground": [
-    "Pour the foundation"
-  ],
-  "Pour the foundation": [
-    "Frame the structure"
-  ],
-  "Frame the structure": [
-    "Driveway",
-    "Windows",
-    "HVAC",
-    "Electrical",
-    "Roofing",
-    "Plumbing",
-    "Landscaping",
-    "Siding"
-  ],
-  "Roofing": [
-    "Shingles"
-  ],
-  "Plumbing": [
-    "Drywall"
-  ],
-  "Drywall": [
-    "Paint"
-  ],
-  "Paint": [
-    "Carpet"
-  ]
-}
-
-=================================================================
-
-Design floor plans -> ["Review and edit plans"]
-Review and edit plans -> ["Prepare the ground"]
-Prepare the ground -> ["Pour the foundation"]
-Frame the structure -> ["Siding", "Landscaping", "Plumbing", "Roofing", "Electrical", "HVAC", "Windows", "Driveway"]
-Siding -> []
-Landscaping -> []
-Pour the foundation -> ["Frame the structure"]
-Plumbing -> ["Drywall"]
-Electrical -> ["Drywall"]
-Drywall -> ["Paint"]
-Roofing -> ["Shingles"]
-HVAC -> ["Drywall"]
-Paint -> ["Carpet"]
-Carpet -> []
-Windows -> []
-Shingles -> []
-Driveway -> []
-
-=================================================================
-
-# dependency_graph
+=============================== dependency_graph ==================================
 
 {
   "Carpet": [
@@ -146,3 +60,70 @@ Driveway -> []
 
   ]
 }
+
+===============================sequence==================================
+
+[
+  "Siding",
+  "Landscaping",
+  "Carpet",
+  "Paint",
+  "Drywall",
+  "Plumbing",
+  "Shingles",
+  "Roofing",
+  "Electrical",
+  "HVAC",
+  "Windows",
+  "Driveway",
+  "Frame the structure",
+  "Pour the foundation",
+  "Prepare the ground",
+  "Review and edit plans",
+  "Design floor plans"
+]
+
+================================result=================================
+
+{
+  "": [
+    "Design floor plans"
+  ],
+  "Design floor plans": [
+    "Review and edit plans"
+  ],
+  "Review and edit plans": [
+    "Prepare the ground"
+  ],
+  "Prepare the ground": [
+    "Pour the foundation"
+  ],
+  "Pour the foundation": [
+    "Frame the structure"
+  ],
+  "Frame the structure": [
+    "Driveway",
+    "Windows",
+    "HVAC",
+    "Electrical",
+    "Roofing",
+    "Plumbing",
+    "Landscaping",
+    "Siding"
+  ],
+  "Roofing": [
+    "Shingles"
+  ],
+  "Plumbing": [
+    "Drywall"
+  ],
+  "Drywall": [
+    "Paint"
+  ],
+  "Paint": [
+    "Carpet"
+  ]
+}
+
+=================================================================
+

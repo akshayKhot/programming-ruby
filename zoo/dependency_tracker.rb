@@ -14,8 +14,8 @@ class DependencyTracker
       end
     end
 
-    result = @sequence.reverse_each.group_by { |task| task.parent }
-    result.values.each do |tasks|
+    sorted_dependencies = @sequence.reverse.group_by { |task| task.parent }
+    sorted_dependencies.values.each do |tasks|
       puts tasks.sort.reverse.join(", ")
     end
   end

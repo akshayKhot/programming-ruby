@@ -9,15 +9,13 @@ class DependencyTracker
 
   def track
     @dependency_graph.keys.each do |dependency|
-      if !dependency.tracked
-        unless @dependency_graph[dependency].empty?
-          deep_track(dependency)
-        end
+      unless dependency.tracked || @dependency_graph[dependency].empty?
+        deep_track(dependency)
       end
     end
 
     result = @sequence.reverse_each.group_by { |task| task.parent }
-    result.each do |dependency, tasks|
+    result.values.each do |tasks|
       puts tasks.sort.reverse.join(", ")
     end
   end

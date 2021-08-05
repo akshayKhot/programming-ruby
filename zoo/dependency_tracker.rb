@@ -38,7 +38,7 @@ class DependencyTracker
     tasks = {}    # to ensure no duplicate tasks are created
     dependency_tasks = {}
 
-    File.readlines("zoo/input.txt").each do |line|
+    File.readlines("zoo/samples.txt").each do |line|
       dependency_name, task_name = line.chomp.split("->")
 
       tasks[dependency_name] ||= Task.new(dependency_name)

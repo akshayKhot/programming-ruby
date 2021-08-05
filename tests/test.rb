@@ -1,3 +1,3 @@
 require "test/unit"
 
-require_relative "./document_test"
+require_relative './sorter_test'

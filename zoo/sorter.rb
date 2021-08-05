@@ -5,7 +5,6 @@ class Sorter
 
   def initialize
     @dep_tasks_graph = build_graph
-    @time = 0
     @sequence = []
   end
 
@@ -17,30 +16,23 @@ class Sorter
 
   def traverse_graph
     @dep_tasks_graph.keys.each do |dependency|
-      if dependency.is_new?
+      if dependency.color == :white
         dfs_visit(dependency)
       end
     end
   end
 
   def dfs_visit(dependency)
-    dependency.is_visited
-
-    @time += 1
-    dependency.start = @time
+    dependency.color = :gray
 
     tasks = @dep_tasks_graph[dependency].sort
     tasks.each do |task|
-      if task.is_new?
-        task.parent = dependency
+      if task.color == :white
         dfs_visit(task)
       end
     end
 
-    dependency.is_finished
-
-    @time += 1
-    dependency.finish = @time
+    dependency.color = :black
 
     @sequence.push(dependency)
   end

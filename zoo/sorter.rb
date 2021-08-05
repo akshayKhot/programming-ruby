@@ -1,5 +1,4 @@
 require "json"
-require "set"
 
 class Sorter
 
@@ -56,15 +55,6 @@ class Sorter
       dep_tasks[task] ||= []
     end
 
-    # jj dep_tasks.sort_by { |k| k }.reverse.to_h
     dep_tasks.sort_by { |k| k }.reverse.to_h
   end
-
-  # def to_s
-  #   @dep_tasks_graph.each do |dependency, tasks|
-  #     print "#{dependency} (#{dependency.color}) -> "
-  #     print tasks.join ", "
-  #     puts
-  #   end
-  # end
 end

@@ -4,8 +4,8 @@ require "set"
 class Sorter
 
   def initialize
-    @dep_tasks_graph = build_graph
     @sequence = []
+    @dep_tasks_graph = build_graph
   end
 
   def sort

@@ -11,7 +11,9 @@ class Sorter
   def sort
     @dep_tasks_graph.keys.each do |dependency|
       if dependency.color == :white
-        dfs_visit(dependency)
+        unless @dep_tasks_graph[dependency].empty?
+          dfs_visit(dependency)
+        end
       end
     end
 
@@ -45,10 +47,10 @@ class Sorter
       tasks[task_name] ||= Task.new(task_name)
 
       task = tasks[task_name]
-      dep_tasks[task] ||= []
-
       dependency = tasks[dependency_name]
+
       (dep_tasks[dependency] ||= []) << task
+      dep_tasks[task] ||= []
     end
 
     # jj dep_tasks.sort_by { |k| k }.reverse.to_h

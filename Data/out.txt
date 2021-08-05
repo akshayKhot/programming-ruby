@@ -1,0 +1,74 @@
+1. Ruby classes are Objects (therefore String.new, not new String())
+2. Everything is an Object
+3. Compared to Java, XML is agile. Compared to Ruby, XML is Heavy.
+4. Ruby does not have type casting.
+5. Don't worry about interfaces, enjoy Duck Typing.
+6. No method overloading
+7. Enjoy closures and blocks
+8. Don't worry about early performance optimization
+9. Web-development is possible with other languages besides Java.
+10. Ruby has O/R mappers, so find your Ruby "hibernate", but drop any preconceptions.
+11. Ruby has MVC and OO programming and libraries, but drop any preconceptions.
+12. Ruby is a language to be used everywhere. You use it even in templates. No need for "Velocity/JSP."
+13. Ruby is not a Silver Bullet, unlike Java, right? :-)
+14. In Ruby data is strongly typed, but variables are *not*
+15. you can have variable number of parameters, and multiple return values
+16. Once you start coding Ruby, going back to Java is painful.
+17. "." (dot) is a method call operator. "::" (colon-colon) is a scope operator.
+18. Java static methods do not (quite) translate to Ruby class methods.
+19. CamelCase for class names, names_with_underscores for methods and variables.
+20. local_variable, @instance_variable, $global_variable, Constants, (and @@class_variables)
+21. Everything is an expression.
+22. stop writing so much code
+23. That you can write Ruby in Java ( http://jruby.sourceforge.net )
+24. ri is your friend. irb is your other friend.
+25. Reflection in Ruby is much easier than in Java, and more deeply into the language than the java.lang.reflect tack-on.
+26. eval
+27. the builtin classes are much faster because they're written in C and not Ruby
+28. Boolean methods end in ?. Dangerous methods end in !
+29. Avoid external utility classes
+30. Use class methods to define pseudo-compile directives
+31. You probably don't need Factories
+32. Enumerable is your friend
+33. Typing is the enemy
+34. No external configuration files
+35. method_missing
+36. C extensions/wrappers are *much* easier in Ruby than JNI interfaces in Java
+37. Ruby classes are always "open".
+38. Singleton methods
+39. no semi-colons, optional parenthesis
+40. Ruby packaging vs Java packaging
+41. you can use string interpolation, ex: "x: #{@myvar}" instead of having to say "x:" + myvar'
+42. ruby has multiple inheritance through mixins (this is sooo nice to have)
+43. ruby has shortcuts for accessor methods which reduces alot of redundant coding in java
+44. writing code in ruby, can improve the code you write in java
+45. No explicit types. Probably the most disconcerting thing for a javahead
+46. you cannot rely on the compiler to catch trivial mistakes
+47. Think in terms of methods (behaviors) instead of classes.
+48. KISS
+49. Discipline. Because of its inherent flexibility, Ruby require more self-discipline
+50. REXML vs. JAXP. I rest my case.
+51. Ruby is agile, perfectly suited for XP
+52. Ruby is dynamic. You can add, remove and modify objects, classes and methods at runtime.
+53. Ruby has extensive reflection capabilities
+54. Ruby is strongly typed, not statically typed
+55. Ruby's OO is message based.
+56. Many things that you're used to thinking of as syntax are now just
+57. For good (but subtle) reasons, you have to leave the '++' and '--' behind.
+58. you can fit in your mind and write code without looking at the docs every six minutes
+59. less syntax and less typing
+60. Fixed what's wrong with Perl
+61. Fixes what's wrong with Python
+62. It's super productive (like Perl, Python and Smalltalk)- maybe 5-10x Java.
+63. Is a lot like Smalltalk, but doesn't look as funny
+64. Is a lot like JavaScript, but more OO and more for ful app development
+65. Blocks and Closures
+66. Open Classes
+67. Duck Typing
+68. "finally" is called "ensure"
+69. Use blocks for transactional behavior like like File.open does.
+70. Help at: http://ruby-lang.org/en , http://ruby-doc.org/ , news:comp.lang.ruby, irc:ruby-talk
+71. An instance of a class can be extended to be subtly different, without needing to subclass.
+72. you can change your mind about whether .foo is a simple property or a complex method call, without affecting the interface to your class.
+73. HEREDOC strings with variable interpolation make large chunks of output really easy to construct.
+74. Secure

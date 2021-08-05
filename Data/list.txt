@@ -1,0 +1,74 @@
+bullet	Ruby classes are Objects (therefore String.new, not new String())
+bullet	Everything is an Object
+bullet	Compared to Java, XML is agile. Compared to Ruby, XML is Heavy.
+bullet	Ruby does not have type casting.
+bullet	Don't worry about interfaces, enjoy Duck Typing.
+bullet	No method overloading
+bullet	Enjoy closures and blocks
+bullet	Don't worry about early performance optimization
+bullet	Web-development is possible with other languages besides Java.
+bullet	Ruby has O/R mappers, so find your Ruby "hibernate", but drop any preconceptions.
+bullet	Ruby has MVC and OO programming and libraries, but drop any preconceptions.
+bullet	Ruby is a language to be used everywhere. You use it even in templates. No need for "Velocity/JSP."
+bullet	Ruby is not a Silver Bullet, unlike Java, right? :-)
+bullet	In Ruby data is strongly typed, but variables are *not*
+bullet	you can have variable number of parameters, and multiple return values
+bullet	Once you start coding Ruby, going back to Java is painful.
+bullet	"." (dot) is a method call operator. "::" (colon-colon) is a scope operator.
+bullet	Java static methods do not (quite) translate to Ruby class methods.
+bullet	CamelCase for class names, names_with_underscores for methods and variables.
+bullet	local_variable, @instance_variable, $global_variable, Constants, (and @@class_variables)
+bullet	Everything is an expression.
+bullet	stop writing so much code
+bullet	That you can write Ruby in Java ( http://jruby.sourceforge.net )
+bullet	ri is your friend. irb is your other friend.
+bullet	Reflection in Ruby is much easier than in Java, and more deeply into the language than the java.lang.reflect tack-on.
+bullet	eval
+bullet	the builtin classes are much faster because they're written in C and not Ruby
+bullet	Boolean methods end in ?. Dangerous methods end in !
+bullet	Avoid external utility classes
+bullet	Use class methods to define pseudo-compile directives
+bullet	You probably don't need Factories
+bullet	Enumerable is your friend
+bullet	Typing is the enemy
+bullet	No external configuration files
+bullet	method_missing
+bullet	C extensions/wrappers are *much* easier in Ruby than JNI interfaces in Java
+bullet	Ruby classes are always "open".
+bullet	Singleton methods
+bullet	no semi-colons, optional parenthesis
+bullet	Ruby packaging vs Java packaging
+bullet	you can use string interpolation, ex: "x: #{@myvar}" instead of having to say "x:" + myvar'
+bullet	ruby has multiple inheritance through mixins (this is sooo nice to have)
+bullet	ruby has shortcuts for accessor methods which reduces alot of redundant coding in java
+bullet	writing code in ruby, can improve the code you write in java
+bullet	No explicit types. Probably the most disconcerting thing for a javahead
+bullet	you cannot rely on the compiler to catch trivial mistakes
+bullet	Think in terms of methods (behaviors) instead of classes.
+bullet	KISS
+bullet	Discipline. Because of its inherent flexibility, Ruby require more self-discipline
+bullet	REXML vs. JAXP. I rest my case.
+bullet	Ruby is agile, perfectly suited for XP
+bullet	Ruby is dynamic. You can add, remove and modify objects, classes and methods at runtime.
+bullet	Ruby has extensive reflection capabilities
+bullet	Ruby is strongly typed, not statically typed
+bullet	Ruby's OO is message based.
+bullet	Many things that you're used to thinking of as syntax are now just
+bullet	For good (but subtle) reasons, you have to leave the '++' and '--' behind.
+bullet	you can fit in your mind and write code without looking at the docs every six minutes
+bullet	less syntax and less typing
+bullet	Fixed what's wrong with Perl
+bullet	Fixes what's wrong with Python
+bullet	It's super productive (like Perl, Python and Smalltalk)- maybe 5-10x Java.
+bullet	Is a lot like Smalltalk, but doesn't look as funny
+bullet	Is a lot like JavaScript, but more OO and more for ful app development
+bullet	Blocks and Closures
+bullet	Open Classes
+bullet	Duck Typing
+bullet	"finally" is called "ensure"
+bullet	Use blocks for transactional behavior like like File.open does.
+bullet	Help at: http://ruby-lang.org/en , http://ruby-doc.org/ , news:comp.lang.ruby, irc:ruby-talk
+bullet	An instance of a class can be extended to be subtly different, without needing to subclass.
+bullet	you can change your mind about whether .foo is a simple property or a complex method call, without affecting the interface to your class.
+bullet	HEREDOC strings with variable interpolation make large chunks of output really easy to construct.
+bullet	Secure

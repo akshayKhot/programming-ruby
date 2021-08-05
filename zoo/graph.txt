@@ -1,0 +1,70 @@
+Design floor plans -> ["Review and edit plans"]
+Review and edit plans -> ["Prepare the ground"]
+Prepare the ground -> ["Pour the foundation"]
+Frame the structure -> ["Siding", "Landscaping", "Plumbing", "Roofing", "Electrical", "HVAC", "Windows", "Driveway"]
+Siding -> []
+Landscaping -> []
+Pour the foundation -> ["Frame the structure"]
+Plumbing -> ["Drywall"]
+Electrical -> ["Drywall"]
+Drywall -> ["Paint"]
+Roofing -> ["Shingles"]
+HVAC -> ["Drywall"]
+Paint -> ["Carpet"]
+Carpet -> []
+Windows -> []
+Shingles -> []
+Driveway -> []
+
+
+
+
+
+
+
+
+
+=================================================================
+
+{
+  "Design floor plans": [
+    "Review and edit plans"
+  ],
+  "Review and edit plans": [
+    "Prepare the ground"
+  ],
+  "Frame the structure": [
+    "Siding",
+    "Landscaping",
+    "Plumbing",
+    "Roofing",
+    "Electrical",
+    "HVAC",
+    "Windows",
+    "Driveway"
+  ],
+  "Prepare the ground": [
+    "Pour the foundation"
+  ],
+  "Pour the foundation": [
+    "Frame the structure"
+  ],
+  "Electrical": [
+    "Drywall"
+  ],
+  "HVAC": [
+    "Drywall"
+  ],
+  "Drywall": [
+    "Paint"
+  ],
+  "Plumbing": [
+    "Drywall"
+  ],
+  "Paint": [
+    "Carpet"
+  ],
+  "Roofing": [
+    "Shingles"
+  ]
+}

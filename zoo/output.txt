@@ -1,3 +1,27 @@
+# sequence
+
+[
+  "Siding",
+  "Landscaping",
+  "Carpet",
+  "Paint",
+  "Drywall",
+  "Plumbing",
+  "Shingles",
+  "Roofing",
+  "Electrical",
+  "HVAC",
+  "Windows",
+  "Driveway",
+  "Frame the structure",
+  "Pour the foundation",
+  "Prepare the ground",
+  "Review and edit plans",
+  "Design floor plans"
+]
+
+# result
+
 {
   "": [
     "Design floor plans"
@@ -37,30 +61,6 @@
     "Carpet"
   ]
 }
-Design floor plans
-Review and edit plans
-Prepare the ground
-Pour the foundation
-Frame the structure
-Driveway
-Windows
-HVAC
-Electrical
-Roofing
-Plumbing
-Landscaping
-Siding
-Shingles
-Drywall
-Paint
-Carpet
-
-
-
-
-
-
-
 
 =================================================================
 
@@ -84,12 +84,23 @@ Driveway -> []
 
 =================================================================
 
+# sorted dependency_tasks
+
 {
+  "Carpet": [
+
+  ],
   "Design floor plans": [
     "Review and edit plans"
   ],
-  "Review and edit plans": [
-    "Prepare the ground"
+  "Driveway": [
+
+  ],
+  "Drywall": [
+    "Paint"
+  ],
+  "Electrical": [
+    "Drywall"
   ],
   "Frame the structure": [
     "Siding",
@@ -101,28 +112,37 @@ Driveway -> []
     "Windows",
     "Driveway"
   ],
-  "Prepare the ground": [
-    "Pour the foundation"
-  ],
-  "Pour the foundation": [
-    "Frame the structure"
-  ],
-  "Electrical": [
-    "Drywall"
-  ],
   "HVAC": [
     "Drywall"
   ],
-  "Drywall": [
-    "Paint"
-  ],
-  "Plumbing": [
-    "Drywall"
+  "Landscaping": [
+
   ],
   "Paint": [
     "Carpet"
   ],
+  "Plumbing": [
+    "Drywall"
+  ],
+  "Pour the foundation": [
+    "Frame the structure"
+  ],
+  "Prepare the ground": [
+    "Pour the foundation"
+  ],
+  "Review and edit plans": [
+    "Prepare the ground"
+  ],
   "Roofing": [
     "Shingles"
+  ],
+  "Shingles": [
+
+  ],
+  "Siding": [
+
+  ],
+  "Windows": [
+
   ]
 }

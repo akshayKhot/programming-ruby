@@ -34,66 +34,6 @@ class DependencyTracker
     @sequence.push(dependency)
   end
 
-  # {
-  #   "Carpet": [
-  #
-  #   ],
-  #   "Design floor plans": [
-  #     "Review and edit plans"
-  #   ],
-  #   "Driveway": [
-  #
-  #   ],
-  #   "Drywall": [
-  #     "Paint"
-  #   ],
-  #   "Electrical": [
-  #     "Drywall"
-  #   ],
-  #   "Frame the structure": [
-  #     "Siding",
-  #     "Landscaping",
-  #     "Plumbing",
-  #     "Roofing",
-  #     "Electrical",
-  #     "HVAC",
-  #     "Windows",
-  #     "Driveway"
-  #   ],
-  #   "HVAC": [
-  #     "Drywall"
-  #   ],
-  #   "Landscaping": [
-  #
-  #   ],
-  #   "Paint": [
-  #     "Carpet"
-  #   ],
-  #   "Plumbing": [
-  #     "Drywall"
-  #   ],
-  #   "Pour the foundation": [
-  #     "Frame the structure"
-  #   ],
-  #   "Prepare the ground": [
-  #     "Pour the foundation"
-  #   ],
-  #   "Review and edit plans": [
-  #     "Prepare the ground"
-  #   ],
-  #   "Roofing": [
-  #     "Shingles"
-  #   ],
-  #   "Shingles": [
-  #
-  #   ],
-  #   "Siding": [
-  #
-  #   ],
-  #   "Windows": [
-  #
-  #   ]
-  # }
   def build_graph
     tasks = {}    # to ensure no duplicate tasks are created
     dependency_tasks = {}

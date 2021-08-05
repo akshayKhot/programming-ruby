@@ -9,17 +9,13 @@ class Sorter
   end
 
   def sort
-    traverse_graph
-
-    @sequence.reverse_each { |task| puts task }
-  end
-
-  def traverse_graph
     @dep_tasks_graph.keys.each do |dependency|
       if dependency.color == :white
         dfs_visit(dependency)
       end
     end
+
+    @sequence.reverse_each { |task| puts task }
   end
 
   def dfs_visit(dependency)

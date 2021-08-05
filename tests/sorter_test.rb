@@ -1,9 +1,9 @@
 require "minitest/autorun"
-require "./zoo/sorter"
+require "./zoo/dependency_tracker"
 
 class TestSorter < Minitest::Test
   def setup
-    @sorter = Sorter.new
+    @tracker = DependencyTracker.new
   end
   
   def test_salary
@@ -18,6 +18,6 @@ Drywall
 Paint
 Carpet"
 
-    assert_equal expected, @sorter.sort
+    assert_equal expected, @tracker.track
   end
 end

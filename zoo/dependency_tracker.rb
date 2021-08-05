@@ -1,13 +1,13 @@
 require "json"
 
-class Sorter
+class DependencyTracker
 
   def initialize
     @sequence = []
     @dep_tasks_graph = build_graph
   end
 
-  def sort
+  def track
     @dep_tasks_graph.keys.each do |dependency|
       if !dependency.tracked
         unless @dep_tasks_graph[dependency].empty?

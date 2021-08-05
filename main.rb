@@ -1,8 +1,8 @@
-require "./zoo/sorter"
+require "./zoo/dependency_tracker"
 require "./zoo/vertex"
 require "./zoo/task"
 
-Sorter.new.sort
+DependencyTracker.new.track
 
 
 

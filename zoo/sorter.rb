@@ -9,9 +9,9 @@ class Sorter
 
   def sort
     @dep_tasks_graph.keys.each do |dependency|
-      if dependency.color == :white
+      if !dependency.tracked
         unless @dep_tasks_graph[dependency].empty?
-          deep_visit(dependency)
+          deep_track(dependency)
         end
       end
     end
@@ -22,18 +22,16 @@ class Sorter
     end
   end
 
-  def deep_visit(dependency)
-    dependency.color = :gray
+  def deep_track(dependency)
+    dependency.tracked = true
 
     tasks = @dep_tasks_graph[dependency]
     tasks.each do |task|
-      if task.color == :white
+      if !task.tracked
         task.parent = dependency
-        deep_visit(task)
+        deep_track(task)
       end
     end
-
-    dependency.color = :black
 
     @sequence.push(dependency)
   end

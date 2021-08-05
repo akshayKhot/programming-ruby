@@ -12,8 +12,9 @@ Review and edit plans
 Prepare the ground
 Pour the foundation
 Frame the structure
-Driveway, Electrical, HVAC, Landscaping, Plumbing, Roofing, Siding,Windows
-Drywall, Shingles
+Driveway, Electrical, HVAC, Landscaping, Plumbing, Roofing, Siding, Windows
+Shingles
+Drywall
 Paint
 Carpet"
 

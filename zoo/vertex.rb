@@ -1,8 +1,8 @@
 class Vertex
-  attr_accessor :color, :parent
+  attr_accessor :tracked, :parent
 
   def initialize
-    @color = :white
+    @tracked = false
     @parent = nil
   end
 end

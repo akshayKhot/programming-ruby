@@ -11,7 +11,11 @@ class Task < Vertex
   end
 
   def to_s
-    @name
+    if @parent
+      "#{@parent} => #{@name}"
+    else
+      "#{@name}"
+    end
   end
 
   def eql?(other)

@@ -10,6 +10,9 @@ class Sorter
 
   def sort
     @dep_tasks_graph.keys.each do |dependency|
+      if dependency.name == "Carpet"
+        # puts ""
+      end
       if dependency.color == :white
         dfs_visit(dependency)
       end
@@ -21,9 +24,12 @@ class Sorter
   def dfs_visit(dependency)
     dependency.color = :gray
 
-    tasks = @dep_tasks_graph[dependency].sort
+    tasks = @dep_tasks_graph[dependency]
     tasks.each do |task|
       if task.color == :white
+        if (task.name == "Carpet")
+        end
+        task.parent = dependency
         dfs_visit(task)
       end
     end

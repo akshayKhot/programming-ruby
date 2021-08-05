@@ -17,10 +17,10 @@ class Sorter
       end
     end
 
-    # @sequence.reverse_each { |task| puts task }
     result = @sequence.reverse_each.group_by { |task| task.parent }
-    jj result
-    result.values.each { |k| puts k }
+    result.each do |dependency, tasks|
+      puts tasks.sort.reverse.join(", ")
+    end
   end
 
   def dfs_visit(dependency)

@@ -27,13 +27,17 @@ class Sorter
     tasks = @dep_tasks_graph[dependency]
     tasks.each do |task|
       if task.color == :white
-        if (task.name == "Carpet")
+        if (task.name == "Carpet" || task.name == "Paint")
+          print ""
         end
         task.parent = dependency
         dfs_visit(task)
       end
     end
 
+    if dependency.name == "Carpet"
+      print ""
+    end
     dependency.color = :black
 
     @sequence.push(dependency)
@@ -60,11 +64,11 @@ class Sorter
     dep_tasks.sort_by { |k| k }.reverse.to_h
   end
 
-  def to_s
-    @dep_tasks_graph.each do |dependency, tasks|
-      print "#{dependency} (#{dependency.color}) -> "
-      print tasks.join ", "
-      puts
-    end
-  end
+  # def to_s
+  #   @dep_tasks_graph.each do |dependency, tasks|
+  #     print "#{dependency} (#{dependency.color}) -> "
+  #     print tasks.join ", "
+  #     puts
+  #   end
+  # end
 end

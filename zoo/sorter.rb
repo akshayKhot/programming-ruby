@@ -11,7 +11,7 @@ class Sorter
     @dep_tasks_graph.keys.each do |dependency|
       if dependency.color == :white
         unless @dep_tasks_graph[dependency].empty?
-          dfs_visit(dependency)
+          deep_visit(dependency)
         end
       end
     end
@@ -22,14 +22,14 @@ class Sorter
     end
   end
 
-  def dfs_visit(dependency)
+  def deep_visit(dependency)
     dependency.color = :gray
 
     tasks = @dep_tasks_graph[dependency]
     tasks.each do |task|
       if task.color == :white
         task.parent = dependency
-        dfs_visit(task)
+        deep_visit(task)
       end
     end
 

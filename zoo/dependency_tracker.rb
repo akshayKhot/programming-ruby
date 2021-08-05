@@ -4,13 +4,13 @@ class DependencyTracker
 
   def initialize
     @sequence = []
-    @dep_tasks_graph = build_graph
+    @dependency_graph = build_graph
   end
 
   def track
-    @dep_tasks_graph.keys.each do |dependency|
+    @dependency_graph.keys.each do |dependency|
       if !dependency.tracked
-        unless @dep_tasks_graph[dependency].empty?
+        unless @dependency_graph[dependency].empty?
           deep_track(dependency)
         end
       end
@@ -25,7 +25,7 @@ class DependencyTracker
   def deep_track(dependency)
     dependency.tracked = true
 
-    tasks = @dep_tasks_graph[dependency]
+    tasks = @dependency_graph[dependency]
     tasks.each do |task|
       if !task.tracked
         task.parent = dependency
@@ -38,7 +38,7 @@ class DependencyTracker
 
   def build_graph
     tasks = {}
-    dep_tasks = {}
+    dependency_tasks = {}
 
     File.readlines("zoo/input.txt").each do |line|
       dependency_name, task_name = line.chomp.split("->")
@@ -49,10 +49,10 @@ class DependencyTracker
       task = tasks[task_name]
       dependency = tasks[dependency_name]
 
-      (dep_tasks[dependency] ||= []) << task
-      dep_tasks[task] ||= []
+      (dependency_tasks[dependency] ||= []) << task
+      dependency_tasks[task] ||= []
     end
 
-    dep_tasks.sort_by { |k| k }.reverse.to_h
+    dependency_tasks.sort_by { |k| k }.reverse.to_h
   end
 end

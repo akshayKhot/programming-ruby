@@ -18,4 +18,9 @@ class ArrayTest < Minitest::Test
     assert_equal [0, 0, 0, 0, 1, 1, 1, 1], Sorter.bin_sort([1, 0, 1, 0, 1, 0, 0, 1])
     assert_equal [], Sorter.bin_sort([])
   end
+
+  def test_max_prod
+    assert_equal 30, Finder.max_prod([-10, -3, 5, 6, -2])
+    assert_equal 40, Finder.max_prod([-10, -4, 5, 6, -2])
+  end
 end

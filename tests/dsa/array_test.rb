@@ -14,7 +14,8 @@ class ArrayTest < Minitest::Test
   end
 
   def test_binary_sort
-    assert_equal [0, 1], BinarySort.sort([1, 0])
-    assert_equal [0, 0, 0, 0, 1, 1, 1, 1], BinarySort.sort([1, 0, 1, 0, 1, 0, 0, 1])
+    assert_equal [0, 1], Sorter.bin_sort([1, 0])
+    assert_equal [0, 0, 0, 0, 1, 1, 1, 1], Sorter.bin_sort([1, 0, 1, 0, 1, 0, 0, 1])
+    assert_equal [], Sorter.bin_sort([])
   end
 end

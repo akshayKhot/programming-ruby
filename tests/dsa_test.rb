@@ -1,6 +1,6 @@
 class DSATest < Minitest::Test
 
   def test_sum
-    assert_equal 2, ArrayChallenge.new.sum
+    assert_equal 2, ArrayProblems.new.sum
   end
 end

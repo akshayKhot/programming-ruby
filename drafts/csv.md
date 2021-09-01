@@ -69,13 +69,13 @@ The `read` method on the CSV class takes the file path and returns the CSV data.
 ```ruby
 require "csv"
 
-CSV.read("Data/companies.csv")
+CSV.read("data/companies.csv")
 ```
 
 If you want to iterate over each row in a CSV file, use the `foreach` method.
 
 ```ruby
-path = "Data/companies.csv"
+path = "data/companies.csv"
 
 CSV.foreach(path) do |row|
   p row
@@ -86,7 +86,7 @@ If you want a data structure instead of arrays, the `table` method returns the e
 as a `CSV::Table` object.
 
 ```ruby
-path = "Data/companies.csv"
+path = "data/companies.csv"
 
 table = CSV.table(path)   # #<CSV::Table mode:col_or_row row_count:4>
 p table.headers   # [:company, :founder, :ceo]
